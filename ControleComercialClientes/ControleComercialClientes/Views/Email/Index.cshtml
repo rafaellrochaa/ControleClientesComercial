@@ -1,0 +1,22 @@
+﻿@model ControleComercialClientes.Models.Email
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Email enviado com sucesso!</title>
+</head>
+<body>
+    <div>
+        <p>Seu email foi enviado com sucesso!!! <br /> Abaixo conteúdo enviado no email @Model.Destinatario.</p>
+        <ul>
+            <li>Assunto Email: @Model.Assunto</li>
+            <li>Mensagem: @Model.TextoCorpoEmail</li>
+        </ul>
+    </div>
+</body>
+</html>
